@@ -317,7 +317,7 @@ if 表示将判断是否符合规定的条件，从而决定执行不同的命�
 
 Sample: if "%1" == "a" format a:
 
-Sample: if {%1} == {} goto noparms
+Sample: if { %1 } == {} goto noparms
 
 2) if exist
 
@@ -411,7 +411,7 @@ if errotlevel 1 goto end
 
 for 命令是一个比较复杂的命令，主要用于参数在指定的范围内循环执行命令。
 
-1) for {%variable | %%variable} in (set) do command [command-parameters]
+1) for { %variable | %%variable} in (set) do command [command-parameters]
 
 %variable 指定一个单一字母可替换的参数。变量名称是区分大小写的，所以 %i 不同于 %I
 
